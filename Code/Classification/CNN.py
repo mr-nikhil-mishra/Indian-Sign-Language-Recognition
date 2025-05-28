@@ -47,15 +47,15 @@ def load_images(folder):
 
 # Loading the train images and their corresponding labels
 
-path='/ISL Datasets/Train-Test/Train'
+path='div_dataset/train'
 train_data=load_images(path)
 
-from google.colab import drive
-drive.mount('/content/drive')
+#from google.colab import drive
+#drive.mount('/content/drive')
 
 # Loading the test images and their corresponding labels
 
-path='ISL Datasets/Train-Test/Test'
+path='div_dataset/test'
 test_data=load_images(path)
 
 # Shuffling the data
@@ -174,10 +174,17 @@ plt.xlabel('Epochs ',fontsize=16)
 plt.ylabel('Accuracy',fontsize=16)
 plt.title('Accuracy Curves',fontsize=16)
 
-import pickle
 
-file_name='/Saved Files/CNN'
-outfile=open(file_name,'wb')
-pickle.dump(model,outfile)
-outfile.close()
+# Change the file path to something accessible
+file_name = 'model.pkl'  # Or use a valid full path like 'C:/path/to/your/models/model.pkl'
+
+# Open the file in write-binary mode
+with open(file_name, 'wb') as outfile:
+    pickle.dump(model, outfile)
+
+
+# #file_name='/models'
+# outfile=open(file_name,'wb')
+# pickle.dump(model,outfile)
+# outfile.close()
 

@@ -46,7 +46,7 @@ def pred_main():
     else:
         method = 1
 
-    model='files/CNN'
+    model='model.pkl'
 
     infile = open(model,'rb')
     cnn = pickle.load(infile)
