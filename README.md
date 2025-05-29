@@ -17,8 +17,8 @@ Before running this project, make sure you have following dependencies -
 * [Opencv contrib](https://pypi.org/project/opencv-contrib-python/)
 * [Anaconda Distribution](https://www.anaconda.com/products/individual)
 
-### Dataset
-Download the images from [here](https://drive.google.com/drive/folders/1SY67sDO2ROoOoBhTBIIDn17gStS0AvCB?usp=sharing)
+### Dataset and the complete model
+Download the images from [here](https://drive.google.com/file/d/135lLcb2ErFPb2x650mCRvX3OHpu_fWus/view?usp=sharing)
 
 Some images of the dataset are shown below:
 <p align="center">
